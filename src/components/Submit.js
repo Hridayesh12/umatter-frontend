@@ -64,10 +64,11 @@ export default class Submit extends Component {
 		//   this.setState({ redirectss: true });
 		//   console.log(redirectss);
 		// }
+		const link="https://umatter-backend.herokuapp.com/"
 		const submit = (e) => {
 			e.preventDefault();
 
-			fetch("/postSurveyData", {
+			fetch(`${link}postSurveyData`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
